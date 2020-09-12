@@ -1,12 +1,6 @@
 <?php
 
-require 'Modele.php';
+require 'Controleur/Routeur.php';
 
-try {
-    $voitures = getVoitures();
-    require 'vueAccueil.php';
-}
-catch (Exception $e) {
-    $msgErreur = $e->getMessage();
-    require 'vueErreur.php';
-}
+$routeur = new Routeur();
+$routeur->routerRequete();
