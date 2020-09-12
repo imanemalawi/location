@@ -14,7 +14,7 @@ class Routeur {
     $this->ctrlVoiture = new ControleurVoiture();
   }
 
-  // Traite une requête entrante
+  // Traite une requête entrante.
   public function routerRequete() {
     try {
       if (isset($_GET['action'])) {
