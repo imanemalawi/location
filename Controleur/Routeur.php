@@ -17,7 +17,7 @@ class Routeur {
     $this->ctrlAdmin = new ControleurAdmin();
   }
 
-  // Traite une requête entrante
+  // Traite une requête entrante.
   public function routerRequete() {
     try {
       if (isset($_GET['action'])) {

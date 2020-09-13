@@ -17,7 +17,7 @@ class Voiture extends Modele {
       . ' where id=?';
     $voiture = $this->executerRequete($sql, array($id));
     if ($voiture->rowCount() == 1)
-      return $voiture->fetch();  // Accès à la première ligne de résultat
+      return $voiture->fetch();  // Accès à la première ligne de résultat.
     else
       throw new Exception("Aucun voiture ne correspond à l'identifiant '$id'");
     }
