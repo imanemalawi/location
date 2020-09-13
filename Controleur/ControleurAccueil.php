@@ -16,5 +16,5 @@ class ControleurAccueil {
     $voitures = $this->voiture->getVoitures();
     $vue = new Vue("Accueil");
     $vue->generer(array('voitures' => $voitures));
-
+  }
 }

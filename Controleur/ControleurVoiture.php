@@ -11,7 +11,7 @@ class ControleurVoiture {
     $this->voiture = new Voiture();
   }
 
-  public function voiture($id){
+  
 
   // Affiche les détails sur un voiture.
   public function voiture($id) {
