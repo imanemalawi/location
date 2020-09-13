@@ -116,7 +116,7 @@
 											<i class="glyphicon glyphicon-eye-open"> </i>
 											<b>Afficher</b>
 										</a>
-										<a href="date_reservation/?id=<?php echo($voiture['id']); ?>" class="btn btn-warning btn-sm">
+										<a href="mailto:chanaa.projects@gmail.com" class="btn btn-warning btn-sm">
 											<i class="fa fa-share"> </i>
 											<b>Réserver</b>
 										</a>

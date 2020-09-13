@@ -2,16 +2,19 @@
 
 require_once 'Controleur/ControleurAccueil.php';
 require_once 'Controleur/ControleurVoiture.php';
+require_once 'Controleur/ControleurAdmin.php';
 require_once 'Vue/Vue.php';
 
 class Routeur {
 
   private $ctrlAccueil;
   private $ctrlVoiture;
+  private $ctrlAdmin;
 
   public function __construct() {
     $this->ctrlAccueil = new ControleurAccueil();
     $this->ctrlVoiture = new ControleurVoiture();
+    $this->ctrlAdmin = new ControleurAdmin();
   }
 
   // Traite une requête entrante
@@ -29,6 +32,9 @@ class Routeur {
           }
           else
             throw new Exception("Identifiant de voiture non défini");
+        }
+        elseif($_GET['action'] == 'authAdmin'){
+          $this->ctrlAdmin->auth();
         }
         else
           throw new Exception("Action non valide");
