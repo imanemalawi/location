@@ -5,11 +5,7 @@ require_once 'Vue/Vue.php';
 
 class ControleurAdmin {
 
-  /*
-  public function __construct() {
-    $this->voiture = new Voiture();
-  }
-  */
+ 
 
   // Affiche les détails sur un voiture
   public function auth() {
