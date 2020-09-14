@@ -4,7 +4,7 @@ require_once 'Modele/Modele.php';
 
 class Voiture extends Modele {
 
-  // Renvoie la liste des voitures du blog
+  // Renvoie la liste des voitures du blog.
   public function getVoitures() {
     $sql = 'select * from vehicules';
     $voitures = $this->executerRequete($sql);
