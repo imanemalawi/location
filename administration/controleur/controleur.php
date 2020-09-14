@@ -1,6 +1,6 @@
 <?php
 	require '../../includes/connection.php';
-	
+	//
 	if (isset($_POST['marque'])&&isset($_POST['modele'])&&isset($_POST['serie'])&&isset($_POST['fabricant'])&&isset($_POST['couleur'])&&isset($_POST['contenance'])&&isset($_POST['chaises'])&&isset($_POST['matricule'])&&isset($_POST['Vmax'])&&isset($_POST['transmission'])&&isset($_POST['acceleration'])&&isset($_POST['Pmoteur'])) {
 
 		$req = $bdd->prepare("INSERT INTO vehicules (marque,modele,serie, fabricant, couleur, contenance, chaises, matricule, vitesse_max, transmission, acceleration, puissance_moteur) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
