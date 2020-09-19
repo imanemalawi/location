@@ -60,7 +60,8 @@ class Routeur {
         else
           throw new Exception("Action non valide");
       }
-      else {  // aucune action définie : affichage de l'accueil
+      else {  
+        // aucune action définie : affichage de l'accueil
 
 
           $this->ctrlAccueil->accueil();
