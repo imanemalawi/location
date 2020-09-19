@@ -12,6 +12,7 @@ class ControleurAccueil {
   }
 
   // Affiche la liste de tous les Voitures
+
   public function accueil() {
     //$voitures = $this->voiture->getVoitures();
     $vue = new Vue("Accueil");

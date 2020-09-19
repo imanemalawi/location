@@ -11,8 +11,11 @@ class ControleurVoiture {
     $this->voiture = new Voiture();
   }
 
-  // Affiche les détails sur un voiture
-  public function voiture($id){
+
+  
+
+  // affiche les détails sur un voiture.
+  public function voiture($id) {
     $voiture = $this->voiture->getVoiture($id);
     $vue = new Vue("Voiture");
     $vue->generer(array('voiture' => $voiture));

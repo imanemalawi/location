@@ -5,7 +5,6 @@ require_once 'Vue/Vue.php';
 
 class ControleurAdmin {
 
-  
   // Affiche les détails sur un voiture
   public function auth() {
     $vue = new Vue("AuthAdmin");
