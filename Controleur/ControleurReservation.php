@@ -35,7 +35,9 @@ class ControleurReservation {
 
   // Confirmer Reservation
   public function confirmer_reservation(){
-    $this->reservation->create($_POST['car_id'],$_POST['date_debut'],$_POST['date_fin'],$_POST['ville_debut'],$_POST['ville_fin'],$_POST['nom'],$_POST['prenom'],$_POST['tel'],$_POST['email'],$_POST['statut'],$_POST['age']);
+    $this->reservation->create($_POST['car_id'],
+$_POST['date_debut'],$_POST['date_fin'],$_POST['ville_debut'],$_POST['ville_fin'],$_POST['nom'],
+$_POST['prenom'],$_POST['tel'],$_POST['email'],$_POST['statut'],$_POST['age']);
     $vue = new Vue("Accueil");
     $vue->generer(array('voitures' => null));
   }
