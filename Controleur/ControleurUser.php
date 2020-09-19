@@ -11,7 +11,7 @@ class ControleurUser {
     $this->user = new User();
   }
 
-  // Page Inscription
+  // Page d'Inscription
   public function Inscription() {
     $vue = new Vue("Inscription");
     $vue->generer(array('nulle' => null));

@@ -20,5 +20,5 @@ Il est recommandé :
 - une base de données MySQL;
 
 ## Technologies
-On utilisera donc PHP et MySQL . Ce dernier servant ici pour dynamiser le site web et envoyer des requêtes asynchrones au serveur web.
+On utilisera donc PHP et MySQL . Ce dernier servant ici pour dynamiser le site web et envoyer des requêtes asynchrones au serveur web
 
