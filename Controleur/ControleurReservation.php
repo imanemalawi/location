@@ -13,7 +13,7 @@ class ControleurReservation {
     $this->voiture = new Voiture();
   }
 
-  // Affiche la liste de tous les Voitures
+  // Affiche la liste de tous les Voitures.
   public function reservation() {
     $vue = new Vue("Reservation");
     $vue->generer(array('reservations' => null));
