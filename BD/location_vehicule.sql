@@ -46,7 +46,9 @@ CREATE TABLE RESERVATIONS(
 );
 
 --insertion cars
-INSERT INTO `cars` (`id`, `marque`, `modele`, `serie`, `fabricant`, `couleur`, `contenance`, `chaises`, `matricule`, `vitesse_max`, `transmission`, `acceleration`, `puissance_moteur`, `disponible`, `price`) VALUES 
+INSERT INTO `cars` 
+(`id`, `marque`, `modele`, `serie`, `fabricant`, `couleur`, `contenance`, `chaises`, `matricule`, `vitesse_max`, `transmission`, `acceleration`, `puissance_moteur`, `disponible`, `price`)
+VALUES 
 ('3', 'renault', 'clio', '45DDFEB', 'renault', 'noir', '200 Litres', '5', '12345/a/40', '180 km/h', 'manuel', '100', '100', 'oui', '4000000 dhs'),
  ('4', 'fiat', 'tipo', '78ASCV', 'fiat', 'noir', '350 Litres', '6', '124598/a/40', '250 km/h', 'manuel', '150', '300', 'oui', '45000000 dhs'),
  ('5', 'renault', 'mega', '602QCD22', 'renault', 'noir', '205 Litres', '4', '12223/a/40', '180 km/h', 'manuel', '100', '100', 'oui', '7000000 dhs'),
@@ -57,6 +59,10 @@ INSERT INTO `cars` (`id`, `marque`, `modele`, `serie`, `fabricant`, `couleur`, `
  ('10', 'volkswagen', 'glof 7', '457AQDDX8', 'volkswagen', 'blanche', '270 Litres', '6', '12555/a/40', '280 km/h', 'manuel', '100', '100', 'oui', '7990000 dhs');
  
  --insertion reservation
- INSERT INTO `reservations` (`ID`, `CAR_ID`, `DATE_DEBUT`, `DATE_FIN`, `VILLE_DEBUT`, `VILLE_FIN`, `NOM`, `PRENOM`, `TEL`, `EMAIL`, `STATUT`, `AGE`) VALUES ('1', '3', SYSDATE(), SYSDATE(), 'TANGER', 'TANGER', 'DAHCHAR', 'MOHAMMED SAID', '0612345678', 'said@gmail.com', '.', '23'), ('2', '5', '2020-09-01 00:00:00', '2020-10-01 00:00:00', 'CASABLANCA', 'CASABLANCA', 'MALAWI', 'IMANE', '0612378945', 'imane@gmail.com', '.', '20');
+ INSERT INTO `reservations` 
+ (`ID`, `CAR_ID`, `DATE_DEBUT`, `DATE_FIN`, `VILLE_DEBUT`, `VILLE_FIN`, `NOM`, `PRENOM`, `TEL`, `EMAIL`, `STATUT`, `AGE`)
+ VALUES 
+ ('1', '3', SYSDATE(), SYSDATE(), 'TANGER', 'TANGER', 'DAHCHAR', 'MOHAMMED SAID', '0612345678', 'said@gmail.com', '.', '23'),
+ ('2', '5', '2020-09-01 00:00:00', '2020-10-01 00:00:00', 'CASABLANCA', 'CASABLANCA', 'MALAWI', 'IMANE', '0612378945', 'imane@gmail.com', '.', '20');
 --insertion users
 INSERT INTO `users` (`ID`, `NOM`, `PRENOM`, `EMAIL`, `TEL`, `RANK`) VALUES ('1', 'admin', 'admin', 'admin@gmail.com', '0698765432', '1');
