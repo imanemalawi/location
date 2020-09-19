@@ -55,3 +55,8 @@ INSERT INTO `cars` (`id`, `marque`, `modele`, `serie`, `fabricant`, `couleur`, `
  ('8', 'seat', 'leon', '4966DEB', 'renault', 'noir', '200 Litres', '5', '12958/a/40', '310 km/h', 'manuel', '100', '300', 'oui', '4590000 dhs'),
  ('9', 'renault', 'clio', '45S6S66', 'renault', 'blanche', '200 Litres', '4', '12980/a/40', '190 km/h', 'manuel', '100', '190', 'oui', '8900000 dhs'),
  ('10', 'volkswagen', 'glof 7', '457AQDDX8', 'volkswagen', 'blanche', '270 Litres', '6', '12555/a/40', '280 km/h', 'manuel', '100', '100', 'oui', '7990000 dhs');
+ 
+ --insertion reservation
+ INSERT INTO `reservations` (`ID`, `CAR_ID`, `DATE_DEBUT`, `DATE_FIN`, `VILLE_DEBUT`, `VILLE_FIN`, `NOM`, `PRENOM`, `TEL`, `EMAIL`, `STATUT`, `AGE`) VALUES ('1', '3', SYSDATE(), SYSDATE(), 'TANGER', 'TANGER', 'DAHCHAR', 'MOHAMMED SAID', '0612345678', 'said@gmail.com', '.', '23'), ('2', '5', '2020-09-01 00:00:00', '2020-10-01 00:00:00', 'CASABLANCA', 'CASABLANCA', 'MALAWI', 'IMANE', '0612378945', 'imane@gmail.com', '.', '20');
+--insertion users
+INSERT INTO `users` (`ID`, `NOM`, `PRENOM`, `EMAIL`, `TEL`, `RANK`) VALUES ('1', 'admin', 'admin', 'admin@gmail.com', '0698765432', '1');
