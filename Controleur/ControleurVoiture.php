@@ -14,7 +14,7 @@ class ControleurVoiture {
 
   
 
-  // affiche les détails sur un voiture.
+  // affiche les détails sur une voiture.
   public function voiture($id) {
     $voiture = $this->voiture->getVoiture($id);
     $vue = new Vue("Voiture");
