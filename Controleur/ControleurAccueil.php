@@ -11,7 +11,7 @@ class ControleurAccueil {
     $this->voiture = new Voiture();
   }
 
-  // Affiche la liste de tous les Voitures
+  // Affiche la liste de tout les Voitures
 
   public function accueil() {
     //$voitures = $this->voiture->getVoitures();
