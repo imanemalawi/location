@@ -7,7 +7,7 @@
  * Utilise l'API PDO de PHP
  *
  * @version 1.0
- *
+ * @author Dahchar Mohammed Said
  */
 abstract class Modele {
 
