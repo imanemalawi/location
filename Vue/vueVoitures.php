@@ -4,10 +4,10 @@
         <div class="row">
             <div class="col-xs-12 padd-lr0">
                 <div class="wheel-start3-body clearfix marg-lg-t255 marg-lg-b75 marg-sm-t190 marg-xs-b30">
-                    <h3>Listing - List View</h3>
+                    <h3>Liste des voitures</h3>
                     <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li class="active">Listing</li>
+                        <li><a href="#">Acceuil</a></li>
+                        <li class="active">Liste</li>
                     </ol>
                 </div>
             </div>
