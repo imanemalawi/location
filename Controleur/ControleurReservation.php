@@ -13,7 +13,7 @@ class ControleurReservation {
     $this->voiture = new Voiture();
   }
 
-  // Affiche la liste de tous les Voiture
+  // Affiche la liste de tous les Voitures
   public function reservation() {
     $vue = new Vue("Reservation");
     $vue->generer(array('reservations' => null));
@@ -26,7 +26,7 @@ class ControleurReservation {
     $vue->generer(array('voitures' => $voitures));
   }
 
-  // Affiche la liste de tous les Voiture
+  // Affiche la liste de tous les Voitures
   public function informations_reservation() {
     $voiture = $this->voiture->getVoiture($_GET['voiture_id']);
     $vue = new Vue("InformationsReservation");
