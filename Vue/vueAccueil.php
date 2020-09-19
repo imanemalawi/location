@@ -5,7 +5,7 @@
 						<header class="wheel-header marg-lg-b100 marg-lg-t200  marg-md-b0 marg-md-t0">
 								<h1>Local Luxe  </h1>
 								<h2>Recherche - Louer - Comparer - Moins cher </h2>
-								
+
 						</header>
 				</div>
 				<div class="col-lg-6 col-lg-pull-6  padd-lr0">
@@ -38,7 +38,7 @@
 																<option>21</option>
 																<option>22</option>
 																<option>23</option>
-								<								<option>24</option>
+																<option>24</option>
 																<option>25</option>
 																<option>26</option>
 																<option>27</option>
@@ -80,7 +80,7 @@
 														</select>
 												</div>
 										</div>
-										
+
 										<label for="input-val18" class="promo promo2">
 										<button class="wheel-btn" id="input-val18">Recherche</button>
 										</label>
@@ -97,20 +97,21 @@
 						<div class="col-xs-12">
 								<div class="wheel-header text-center marg-lg-t140 marg-lg-b65  marg-md-t50 ">
 										<h5>Nous avons la meilleure Collection </h5>
-										<h3>collection de <span>vehicles</span></h3>
+										<h3>collection de <span>véhicules</span></h3>
 								</div>
 						</div>
 				</div>
 				<div class="row">
 						<div class="col-lg-12 ">
+							<div class="tabs-header">
+									<ul>
+
+											<li><a href="#">Nouveaute</a></li>
+
+									</ul>
+							</div>
 								<div class="tabs">
-										<div class="tabs-header">
-												<ul>
-														
-														<li><a href="#">Nouveaute</a></li>
-														
-												</ul>
-										</div>
+
 										<div class="tabs-content  marg-lg-b30">
 												<div class="tabs-item active ">
 														<div class="swiper-container" data-autoplay="0" data-touch="1" data-mouse="0" data-xs-slides="1" data-sm-slides="2" data-md-slides="4" data-lg-slides="6" data-add-slides="6" data-slides-per-view="responsive" data-loop="1" data-speed="1000">
@@ -139,9 +140,7 @@
 																<div class="pagination"></div>
 														</div>
 												</div>
-												
-																<div class="swiper-arrow-left fa fa-angle-left"></div>
-																<div class="swiper-arrow-right fa fa-angle-right"></div>
+
 																<div class="pagination"></div>
 														</div>
 												</div>
@@ -149,6 +148,5 @@
 								</div>
 						</div>
 				</div>
-				
-<!-- ////////////////////////////////////////////// -->
 
+<!-- ////////////////////////////////////////////// -->

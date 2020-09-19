@@ -21,11 +21,12 @@
             <div class="col-sm-8">
                 <header class="wheel-header marg-lg-t25 marg-lg-b65">
                     <h3>Chercher Votre Voiture</span></h3>
+
                 </header>
             </div>
 
         </div>
-        
+
     </div>
     <div class="container padd-lr0 xs-padd">
         <div class="product-list product-list2 wheel-bgt clearfix">
@@ -35,14 +36,14 @@
                     <div class="product-elem-style1 product-elem-style  wheel-bg1 clearfix">
                         <div class="product-table2">
                             <div class="img-wrap img-wrap2 product-cell">
-                                <img src="assets/images/<?php echo $voiture['id']; ;?>.png" alt="img" class="img-responsive">
+                                <img src="assets/images/<?php echo $voiture['id'] ;?>.png" alt="img" class="img-responsive">
                             </div>
                         </div>
                         <div class="product-table3  ">
                             <div class="text-wrap text-wrap2 product-cell">
                                 <div class="title"><?php echo $voiture['marque']; ?></div>
                                 <div class="price-wrap product-cell">
-                                    <span>$<?php echo $voiture['prix']; ?></span><sup>00</sup>/Day
+                                    <span>$<?php echo $voiture['price']; ?></span><sup>00</sup>/Day
                                 </div>
                             </div>
                             <div class="img-wrap img-wrap3 product-cell">

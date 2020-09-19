@@ -39,14 +39,15 @@
                         <h5>Inscivez-vous maintenat </h5>
                         <h3><span>Inscription</span></h3>
                     </div>
-                    <form action="#">
-                        <input type="text" placeholder="Nom">
-                        <input type="text" placeholder="Email">
-                        <input type="text" placeholder="Username">
-                        <input type="text" placeholder="Mot de passe">
+                    <form action="/LocationVoitures/inscription.php" method="post">
+                      <input type="text" name="nom" placeholder="Nom">
+                        <input type="text" name="prenom" placeholder="Prenom">
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="text" name="tel" placeholder="Téléphone">
+                        <input type="password" name="password" placeholder="Mot de passe">
 
 
-                        <button class="wheel-btn">S inscrire</button>
+                        <button type="submit" class="wheel-btn">S inscrire</button>
                     </form>
 
                 </div>

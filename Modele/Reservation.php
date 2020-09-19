@@ -24,7 +24,19 @@ class Reservation extends Modele {
 
     public function create($car_id,$date_debut,$date_fin,$ville_debut,$ville_fin,$nom,$prenom,$tel,$email,$statut,$age){
       $sql = 'insert into reservations(car_id,date_debut,date_fin,ville_debut,ville_fin,nom,prenom,tel,email,statut,age)
-      values ("10","'.$date_debut.'","'.$date_fin.'","'.$ville_debut.'","'.$ville_fin.'","'.$nom.'","'.$prenom.'","'.$tel.'","'.$email.'","inactif","20") ';
+      values ("10",
+      "'.$date_debut.'",
+      "'.$date_fin.'",
+      "'.$ville_debut.'",
+      "'.$ville_fin.'",
+      "'.$nom.'",
+      "'.$prenom.'",
+      "'.$tel.'",
+      "'.$email.'",
+      "inactif","20") ';
       $this->executerRequete($sql);
     }
+
+
+
 }

@@ -21,4 +21,6 @@ class Voiture extends Modele {
     else
       throw new Exception("Aucun voiture ne correspond à l'identifiant '$id'");
     }
+
+    
 }

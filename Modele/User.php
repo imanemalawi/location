@@ -21,4 +21,28 @@ class User extends Modele {
     else
       throw new Exception("Aucun user ne correspond à l'identifiant '$id'");
     }
+
+    // Créer un nouvel utilisateur :
+    public function create($nom,$prenom,$email,$tel,$rank,$password){
+      $sql = 'insert into users(nom,prenom,email,tel,password,rank)
+      values ("'.$nom.'",
+      "'.$prenom.'",
+      "'.$email.'",
+      "'.$tel.'",
+      "'.$password.'",
+      "'.$rank.'")';
+      $this->executerRequete($sql);
+    }
+
+    // Chercher un utilisateur par mail et mot de passe (pour l'authentification)
+    public function userLogin($mail,$mdp){
+      $sql = 'select * from users'
+        . ' where email=? and password=?';
+      $user = $this->executerRequete($sql, array($mail,mdp));
+      if ($user->rowCount() == 1)
+        return $user->fetch();  // Accès à la première ligne de résultat
+      else
+        throw new Exception("Email ou password incorrect");
+
+    }
 }

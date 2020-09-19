@@ -14,7 +14,7 @@
 11 Swipper
 12.Menu
 13 backround block with image
-14 map 
+14 map
 15 Load resize
 -------------------------------------------------------------------*/
 
@@ -51,7 +51,7 @@
             },
             timepicker: false,
 
-            format: 'd.m'
+            format: 'd-m-20y'
         });
     }
 
