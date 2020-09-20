@@ -4,16 +4,18 @@ require_once 'Modele/Reservation.php';
 require_once 'Modele/Voiture.php';
 require_once 'Vue/Vue.php';
 
+// 
 class ControleurReservation {
 
   private $reservation;
-
+// contructeur qui crée l'objet avec ces attributs .
   public function __construct() {
     $this->reservation = new Reservation();
     $this->voiture = new Voiture();
   }
 
-  // Affiche la liste de tous les Voitures.
+  // Affiche la liste de tous les Voiture.
+  // 
   public function reservation() {
     $vue = new Vue("Reservation");
     $vue->generer(array('reservations' => null));
